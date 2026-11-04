@@ -1,5 +1,7 @@
 
 import random
+score = 0
+
 
 for i in range(10):
     a = random.randint(2, 10)
@@ -9,5 +11,9 @@ for i in range(10):
 
     if reponse == a * b:
         print("Juste.")
+        score += 1
     else:
         print(f"Faux ! La bonne réponse était {a * b}.")
+        
+
+print(f"Score : {score}/10.")
