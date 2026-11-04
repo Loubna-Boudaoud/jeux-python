@@ -4,7 +4,7 @@ proposition = 0
 coups = 0
 
 
-while proposition != secret:
+while proposition != secret and coups < 7:
     proposition = int(input("Entrez un nombre entre 1 et 100 : "))
     coups += 1
     if proposition > secret:
@@ -14,3 +14,5 @@ while proposition != secret:
     else:
         print("c'est gagné !")
         print(f"Bravo, trouvé en {coups} coups !")
+    if coups == 7 and proposition != secret:
+        print("Perdu ! Le nombre secret était", secret)
