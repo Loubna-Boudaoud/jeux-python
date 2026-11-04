@@ -17,3 +17,12 @@ for i in range(10):
         
 
 print(f"Score : {score}/10.")
+if score == 10:
+    print("Parfait !")
+elif score >= 7:
+    print("Très bien !")
+elif score >= 5:
+    print("Pas mal !")
+else:
+    print("Révisez vos tables !")
+    
