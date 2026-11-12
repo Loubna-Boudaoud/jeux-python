@@ -6,6 +6,17 @@ jobs:
   bonjour:
     runs-on: ubuntu-latest
     steps:
+      - name: avant checkout
+        run: ls -la
+
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Après checkout
+        run: ls -la
+      - name: Compter les fichiers Python
+        run: find . -type f -name "*.py" -not -path "./.git/*" | wc -l
+
       - name: Dire bonjour
         run: echo "Bonjour GitHub !"
 
