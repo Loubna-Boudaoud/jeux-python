@@ -1,5 +1,7 @@
 # Mes jeux en Python
 
+![CI](https://github.com/Loubna-Boudaoud/jeux-python/actions/workflows/ci.yml/badge.svg)
+
 
 #Nombres mysteres:
 #Un jeu dans lequel il faut deviner un nombre choisi aléatoirement par l'ordinateur.
