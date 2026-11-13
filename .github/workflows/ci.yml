@@ -24,3 +24,7 @@ jobs:
 
       - name: Analyser le code avec ruff
         run: ruff check .
+
+      - name: correction automatique avec ruff
+        run: ruff check --fix .
+        
