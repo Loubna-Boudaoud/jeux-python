@@ -17,4 +17,4 @@ jobs:
           python-version: "3.12"
 
       - name: Vérifier la syntaxe
-        run python -m py_compile *.py
+        run: python -m py_compile *.py
