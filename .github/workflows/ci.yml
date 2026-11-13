@@ -18,3 +18,9 @@ jobs:
 
       - name: Vérifier la syntaxe
         run: python -m py_compile *.py
+
+      - name: Installer ruff
+        run: pip install ruff==0.16.8
+
+      - name: Analyser le code avec ruff
+        run: ruff check .
